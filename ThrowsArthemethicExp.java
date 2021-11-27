@@ -5,17 +5,14 @@ public class ThrowsArthemethicExp {
 
 	public static void main(String[] args) {
 		
-		int x=0,y=1,div;
-		try
-		{
-			div=y/x;
-			System.out.println(div);
-		}
-		catch(exp ae)
-		{
-			System.err.println("you are dividing number with Zero");
-		}
-		
+		 try{
+	         int num1=30, num2=0;
+	         int output=num1/num2;
+	         System.out.println ("Result: "+output);
+	      }
+	      catch(ArithmeticException e){
+	         System.out.println ("cant divide number by zero");
+	      }
 
 	}
 
